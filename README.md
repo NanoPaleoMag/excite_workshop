@@ -3,6 +3,7 @@ Repository for excite workshop in December 2026
 
 Please download all files ahead of the workshop.
 
+Any issues with installation, please contact Thomas Ginnis at tg412@cam.ac.uk
 ## Installation Instructions
 
 ### Conda
@@ -29,7 +30,7 @@ SIGMA and Hyperspy will use conda to manage and install packages. Follow these i
    conda 25.3.1
    ```
 
-### Hyperspy
+### Hyperspy Installation 
 1. Open the conda Command Line Interface
    The terminal should look like (depending on your machine)
    ```
@@ -72,7 +73,60 @@ SIGMA and Hyperspy will use conda to manage and install packages. Follow these i
     hyperspy.__version__
     ```
     If hyperspy and jupyter are correctly installed, it should return the version number of the installed hyperspy `'2.3.0'`     
+
+
   
+### SIGMA2 Installation 
+
+
+1. Open the conda Command Line Interface
+   The terminal should look like (depending on your machine)
+   ```
+   (base) USERNAME@machine :
+   ```
+
+   If it says `(hyperspy)` instead of `(base)` - you are still in the hyperspy virtual environment. Run `conda deactivate` to return to `(base)`
+3. Create a new conda environment for SIGMA2 by running the following
+   ```
+   conda create -n sigma2 python=3.10
+   ```
+   (you will need to press `y` to confirm the installation)
+4. Activate the sigma2 environment by running:
+   ```
+   conda activate sigma2
+   ```
+   The terminal will now look like:
+   ```
+   (sigma2) USERNAME@machine :
+   ```
+   
+6. Download the latest version of SIGMA2 from https://github.com/NanoPaleoMag/SIGMA2 by pressing the green `<> Code` button
+7. Extract the downloaded zip file to a suitable location on your PC (eg. `Documents/SIGMA2`)
+   
+8. Using the conda terminal, navigate to this folder. You can do this by running the following (replacing the path with where you extract the files to)
+   ```
+   cd Documents/SIGMA2
+
+   ```
+   The terminal should now look something like
+   ```
+   (sigma2) C:\Users\USERNAME\Documents\SIGMA2
+   ```
+
+9. Install the requirements for SIGMA2 by running:
+    ```
+    pip install -r requirements.txt
+    ```
+    And following the instructions in the terminal
+    
+10. Once the `pip` installer has finished, open a jupyter notebook by running
+    ```
+    jupyter lab
+    ```
+
+11. In the browser that pops up, navigate to the `tutorials` folder and open `Interactive_SEM_tutorial`
+12. Run the first cells by pressing `Shift`+`Enter`. The cells will show `[*]` while running, and will show `[1]` once they are finished.
+13. If the cells run correctly, then SIGMA is installed correctly
 
 
 
