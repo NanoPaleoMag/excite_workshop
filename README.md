@@ -1,4 +1,4 @@
-# Excite Workshop
+# SIGMA/ Hyperspy Excite Workshop
 Repository for excite workshop in December 2026
 
 Please download all files ahead of the workshop.
