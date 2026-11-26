@@ -38,7 +38,7 @@ SIGMA and Hyperspy will use conda to manage and install packages. Follow these i
    ```
 3. Create a new conda environment for Hyperspy by running the following
    ```
-   conda create -n hypesrspy_env -c conda-forge
+   conda create -n hyperspy_env -c conda-forge python=3.11 exspy jupyterlab pyqt matplotlib-scalebar
    ```
    (you will need to press `y` to confirm the installation)
 4. Activate the hyperspy environment by running:
@@ -49,7 +49,7 @@ SIGMA and Hyperspy will use conda to manage and install packages. Follow these i
    ```
    (hyperspy_env) USERNAME@machine :
    ```
-   
+<!---
 6. Install Hyperspy by running the following. Note - we will install exspy -an extended version of hyperspy, which can deal with more electron microscopy datasets. It will automatically install the base hyperspy in addition
    ```
    conda install exspy -c conda-forge
@@ -69,12 +69,13 @@ SIGMA and Hyperspy will use conda to manage and install packages. Follow these i
     ```
     conda install -c conda-forge matplotlib-scalebar
     ```
-11. Open a jupyter lab terminal by running:
+-->
+5. Open a jupyter lab terminal by running:
     ```
     jupyter lab
     ```
 
-12. Create a new notebook, and run:
+6. Create a new notebook, and run:
     ```
     import hyperspy
     hyperspy.__version__
