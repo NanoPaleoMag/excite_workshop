@@ -128,5 +128,20 @@ SIGMA and Hyperspy will use conda to manage and install packages. Follow these i
 12. Run the first cells by pressing `Shift`+`Enter`. The cells will show `[*]` while running, and will show `[1]` once they are finished.
 13. If the cells run correctly, then SIGMA is installed correctly
 
+# Accessing the workshop files
+## SIGMA workshop
+1. Go to https://universityofcambridgecloud-my.sharepoint.com/:f:/r/personal/rjh40_cam_ac_uk/Documents/SIGMA%20Workshop?d=wa274b457b3664717a130511492f4988f&csf=1&web=1 to download the appropriate files and example notebook
+2. Extract the files, preserving the structure, into the `SIGMA2/tutorials` folder from the installation
+3. Now in your tutorials folder, you should see a file called `sigma_workshop.ipynb` and a folder called `area1` containining a series of `h5oina` files.
+4. In your conda terminal, activate the sigma2 environment, and run `jupyter lab`
+5. Open the `simga_workshop.ipynb` folder
 
+
+## Hyperspy workshop
+1. Download the folder called `hyperspy_workshop` in this github
+2. Extract all the files to a folder of your choice
+3. Open the conda terminal and navigate to that folder in the terminal
+4. Activate the hyperspy environment
+5. Run `jupyter lab`
+6. Navigate to the hyperspy workshop notebook in the browser
 
