@@ -61,13 +61,20 @@ SIGMA and Hyperspy will use conda to manage and install packages. Follow these i
    ```
    conda install jupyterlab -c conda-forge
    ```
-
-9. Open a jupyter lab terminal by running:
+9. We also need to run the following
+    ```
+    conda install -c conda-forge pyqt
+    ```
+10. And install:
+    ```
+    conda install -c conda-forge matplotlib-scalebar
+    ```
+11. Open a jupyter lab terminal by running:
     ```
     jupyter lab
     ```
 
-10. Create a new notebook, and run:
+12. Create a new notebook, and run:
     ```
     import hyperspy
     hyperspy.__version__
